@@ -1,0 +1,77 @@
+{
+  "app": {
+    "bundleName": "com.example.testapplication",
+    "vendor": "example",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {
+  },
+  "module": {
+    "package": "com.example.testapplication",
+    "name": ".MyApplication",
+    "mainAbility": "com.example.testapplication.MainAbility",
+    "deviceType": [
+      "phone",
+      "tablet",
+      "tv",
+      "wearable",
+      "car"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry",
+      "installationFree": false
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "name": "com.example.testapplication.MainAbility",
+        "description": "$string:mainability_description",
+        "icon": "$media:icon",
+        "label": "$string:entry_MainAbility",
+        "launchType": "standard",
+        "orientation": "unspecified",
+        "visible": true,
+        "type": "page"
+      },
+      {
+        "name": "com.example.testapplication.DataAbility",
+        "description": "$string:dataability_description",
+        "type": "data",
+        "uri": "dataability://com.example.testapplication.DataAbility",
+        "icon": "$media:icon",
+        "metaData": {
+          "customizeData": [
+            {
+              "name": "com.example.provider",
+              "extra": "$profile:path"
+            }
+          ]
+        }
+      }
+    ],
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.INTERNET"
+      }
+    ],
+    "defPermissions": [
+      {
+        "name": "com.example.testapplication.DataAbilityShellProvider.PROVIDER"
+      }
+    ]
+  }
+}

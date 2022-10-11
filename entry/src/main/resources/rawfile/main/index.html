@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .child_a{
+            flex-direction: column;
+        }
+        .bt{
+            width:300px;
+            height:80px;
+            background-color: bisque;
+            margin-top: 10px;
+            font-size: 30px;
+        }
+        .text{
+            width: 100%;
+            height: 100px;
+            font-size: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="contation">
+    <div id="test" >
+        <!-- <input type="text" id="txt2" class="text" value="" /> -->
+    </div>
+    <div class="child_a">
+        <p>网络测试</p>
+
+        <div>
+            <button onclick="testIntent()" class="bt">网络测试(fetch)</button>
+            <input type="text" id="txt2" class="text" value="" />
+        </div>
+        <div>
+            <button onclick="testIntent2()" class="bt">网络测试(ajax)</button>
+            <input type="text" id="txt3" class="text" value="" />
+        </div>
+
+    </div>
+</div>
+
+</body>
+<script type="text/javascript" defer="defer" src="HW.js">
+
+</script>
+<script type="text/javascript" defer="defer" src="index.js">
+
+</script>
+
+
+</html>
